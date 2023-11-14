@@ -46,6 +46,8 @@ def binary_search(array, target, start, end):
 ## 트리 자료구조
 * 큰 데이터를 처리하는 소프트웨어는 대부분 데이터를 트리 자료구조로 저장해서 이진 탐색과 같은 탐색 기법을 이용해 빠르게 탐색이 가능하다.
 <img src='https://github.com/Yoon-Suji/Algorithm-study/assets/70956926/4b41c62c-a564-4a73-8202-563f7a60294d' width=500 />
+
+
 * 트리는 부모 노드와 자식 노드의 관계로 표현된다.
 * 트리의 최상단 노드를 루트 노드라고 한다.
 * 트리의 최하단 노드를 단말 노드라고 한다.
