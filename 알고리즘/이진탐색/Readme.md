@@ -42,6 +42,31 @@ def binary_search(array, target, start, end):
   return None
 ```
 
+### bisect_left, bisect_right
+```python
+def binary_search_left(arr, number):
+    """number 이상이 처음 등장하는 인덱스 찾기 (bisect_left)"""
+    left, right = 0, len(arr)
+    while left < right:
+        mid = (left + right) // 2
+        if arr[mid] < number:
+            left = mid + 1
+        else:
+            right = mid
+    return left
+
+def binary_search_right(arr, number):
+    """number 초과가 처음 등장하는 인덱스 찾기 (bisect_right)"""
+    left, right = 0, len(arr)
+    while left < right:
+        mid = (left + right) // 2
+        if arr[mid] <= number:
+            left = mid + 1
+        else:
+            right = mid
+    return left
+```
+
 
 ## 트리 자료구조
 * 큰 데이터를 처리하는 소프트웨어는 대부분 데이터를 트리 자료구조로 저장해서 이진 탐색과 같은 탐색 기법을 이용해 빠르게 탐색이 가능하다.
